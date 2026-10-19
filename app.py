@@ -12,16 +12,18 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.documents import Document
 
 # ──────────────────────────────────────────────
-# HARDCODED PATH TO YOUR PDF FOLDER
+# RELATIVE PATHS (works on local Windows + AWS Linux)
 # ──────────────────────────────────────────────
-DOCS_FOLDER = r"C:\Users\vdrss\Downloads\Langchain_tutorials\3_SIMPLE_RAG_APP\CSA dcouments"
+BASE_DIR = Path(__file__).parent.resolve()
+DOCS_FOLDER = BASE_DIR / "CSA dcouments"      # PDFs folder next to app.py
+LOGO_PATH = BASE_DIR / "csa_logo.png"         # logo next to app.py
 
 # ──────────────────────────────────────────────
 # Page config
 # ──────────────────────────────────────────────
 st.set_page_config(
     page_title="Cricket South Africa Chatbot",
-    page_icon="csa_logo.png",
+    page_icon=str(LOGO_PATH),
     layout="centered",
 )
 
@@ -49,11 +51,11 @@ st.markdown(
 )
 
 # ──────────────────────────────────────────────
-# Header: logo + title (only once)
+# Header: logo + title
 # ──────────────────────────────────────────────
 col1, col2 = st.columns([1, 6], vertical_alignment="center")
 with col1:
-    st.image("csa_logo.png", width=90)
+    st.image(str(LOGO_PATH), width=90)
 with col2:
     st.markdown(
         "<h1 style='color:#1b5e20; margin:0;'>Cricket South Africa Chatbot</h1>",
@@ -153,7 +155,7 @@ def load_and_index_documents(folder_path: str):
 
 # Load documents automatically
 try:
-    retriever, num_pages, num_chunks, failed = load_and_index_documents(DOCS_FOLDER)
+    retriever, num_pages, num_chunks, failed = load_and_index_documents(str(DOCS_FOLDER))
     st.sidebar.success(f"✅ Loaded {num_pages} pages → {num_chunks} chunks")
     if failed:
         st.sidebar.warning(
