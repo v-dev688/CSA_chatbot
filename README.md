@@ -5,6 +5,17 @@ An intelligent, context-aware chatbot dedicated to South African cricket, powere
 Designed with clean, modular architecture, this project is lightweight and ready for single-node deployment on an **AWS EC2** instance.
 
 ---
+<p align="center">
+  <img src="screenshot.png" alt="Cricket South Africa Chatbot UI" width="800"/>
+</p>
+
+# 🏏 Cricket South Africa AI Assistant
+
+An intelligent, context-aware chatbot dedicated to South African cricket, powered by **LangChain** and **Retrieval-Augmented Generation (RAG)**.
+
+<p align="center">
+  <img src="screenshot.png" alt="Cricket South Africa Chatbot UI" width="800"/>
+</p>
 
 ## ✨ Features
 
