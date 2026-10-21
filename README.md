@@ -4,15 +4,7 @@ An intelligent, context-aware chatbot dedicated to South African cricket, powere
 
 Designed with a clean, modular architecture, this project is lightweight and ready for single-node deployment on an **AWS EC2** instance.
 
----
 
-## 📸 Demo Preview
-
-<p align="center">
-  <img src="screenshot.png" alt="Cricket South Africa Chatbot UI" width="800"/>
-</p>
-
----
 
 ## ✨ Features
 
