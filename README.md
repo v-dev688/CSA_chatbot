@@ -2,20 +2,17 @@
 
 An intelligent, context-aware chatbot dedicated to South African cricket, powered by **LangChain** and **Retrieval-Augmented Generation (RAG)**. The bot retrieves grounded domain knowledge—covering Proteas match history, player statistics, domestic fixtures, and team records—to deliver precise answers without hallucinating general cricket data.
 
-Designed with clean, modular architecture, this project is lightweight and ready for single-node deployment on an **AWS EC2** instance.
+Designed with a clean, modular architecture, this project is lightweight and ready for single-node deployment on an **AWS EC2** instance.
 
 ---
-<p align="center">
-  <img src="screenshot.png" alt="Cricket South Africa Chatbot UI" width="800"/>
-</p>
 
-# 🏏 Cricket South Africa AI Assistant
-
-An intelligent, context-aware chatbot dedicated to South African cricket, powered by **LangChain** and **Retrieval-Augmented Generation (RAG)**.
+## 📸 Demo Preview
 
 <p align="center">
   <img src="screenshot.png" alt="Cricket South Africa Chatbot UI" width="800"/>
 </p>
+
+---
 
 ## ✨ Features
 
